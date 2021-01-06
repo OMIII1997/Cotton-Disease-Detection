@@ -9,11 +9,11 @@ import os, sys, glob, re
 
 app = Flask(__name__)
 
-model_path = r"C:\Master\Learning\Agri_Intelligence\Crop_App\Cotton_Disease_91_88.h5"
+model_path = "Cotton_Disease_91_88.h5"
 
-SoilNet = load_model(model_path)
+CropNet = load_model(model_path)
 
-classes = {0:"Alluvial Soil:-{ Rice,Wheat,Sugarcane,Maize,Cotton,Soyabean,Jute }",1:"Black Soil:-{ Virginia, Wheat , Jowar,Millets,Linseed,Castor,Sunflower} ",2:"Clay Soil:-{ Rice,Lettuce,Chard,Broccoli,Cabbage,Snap Beans }",3:"Red Soil:{ Cotton,Wheat,Pilses,Millets,OilSeeds,Potatoes }"}
+
 
 def model_predict(image_path,model):
     print("Predicted")
@@ -57,7 +57,7 @@ def predict():
         file.save(file_path)
 
         print("@@ Predicting class......")
-        pred, output_page = model_predict(file_path,SoilNet)
+        pred, output_page = model_predict(file_path,CropNet)
               
         return render_template(output_page, pred_output = pred, user_image = file_path)
     
