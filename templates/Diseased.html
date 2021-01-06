@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap" rel="stylesheet">
+
+    <title>Disease Detected</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+
+
+        }
+
+        .carousel-inner img {
+            height: 70vh;
+        }
+
+        form {
+            display: flex;
+            height: 85vh;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            width: 60%;
+            text-align: center;
+            margin: auto;
+        }
+
+
+        .details h2 {
+            
+            position: relative;
+            top: 100px;
+            margin: auto;
+            color: rgb(0, 0, 0);
+            font-size: 2rem;
+        }
+
+        label:hover {
+            transform: scale(1.03);
+        }
+
+        .details h2 {
+            /* margin-bottom: 300px; */
+            position: relative;
+            top: 100px;
+            margin: auto;
+            color: rgb(0, 0, 0);
+            font-size: 3rem;
+
+        }
+
+        .gallery-h1 h1 {
+
+            background-color: rgb(44, 43, 43);
+            color: white;
+            padding: 35px;
+            border-radius: 15px;
+            position: relative;
+            top: 95px;
+
+        }
+
+
+
+
+
+        .details h1 {
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            background-color: rgb(45, 47, 49);
+        }
+
+
+        .upload {
+
+            font-size: 20px;
+            background-color: rgb(255, 252, 252);
+            border-radius: 20px;
+            outline: none;
+            width: 315px;
+            color: rgb(0, 0, 0);
+            border: 3px solid rgb(45, 47, 49);
+
+
+
+        }
+
+        ::-webkit-file-upload-button {
+            color: white;
+            padding: 20px;
+            border: 2px solid rgb(129, 129, 129);
+            background-color: rgb(129, 129, 129);
+            border-radius: 15px;
+
+        }
+
+        ::-webkit-file-upload-button:hover {
+            border-radius: 20px;
+            border: 2px solid rgb(177, 174, 174);
+
+
+        }
+
+
+
+        input[type="submit"] {
+            position: absolute;
+            margin-top: 150px;
+            padding: 15px 35px;
+            background-color: white;
+            border-radius: 15px;
+            color: black;
+            font-size: 1.5rem;
+            border: 4px solid rgb(31, 185, 190);
+        }
+
+        .carousel-caption {
+            background: rgba(24, 25, 26, 0.5);
+            border-radius: 10px;
+        }
+
+
+
+        .carousel-caption h3 {
+
+
+            font-family: 'Rowdies', cursive;
+            color: yellow;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+
+        }
+
+        .carousel-caption p {
+            padding: 7px;
+
+
+        }
+
+        .img-thumbnail {
+            height: 300px;
+            top: 180px;
+        }
+
+        .Content-h5 {
+
+            padding: 15px;
+            background-color: black;
+            color: white;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            height:15rem;
+            width: 100rem;
+        }
+
+        .img-preview {
+            width: 400px;
+            height: 356px;
+            position: relative;
+            border: 5px solid #F8F8F8;
+            box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+            margin-top: 1em;
+            margin-bottom: 1em;    
+            left: 400;
+            bottom:85;
+        }
+
+        .img-preview>div {
+            width: 100%;
+            height: 100%;
+            background-size: 400px 356px;
+            background-repeat: no-repeat;
+            background-position: center;
+        
+        }
+
+
+
+
+        @media only screen and (max-width: 325px) {
+            body {
+                font-size: x-small;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div>
+        <style >
+            body { 
+                
+              background-image: url("https://www.hdnicewallpapers.com/Walls/Big/Nature%20and%20Landscape/Beautiful_Nature_Green_Farm_Photo.jpg");
+              
+              
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-size: cover;
+              max-width: 100%;
+              
+            }
+    
+        </style>
+    
+    <section>
+
+        <div class="container-fluid details">
+
+            <h2 class="text-center mt-4 mb-4" style="font-size: 1.75rem;">The name of the disease is Ascochyta Blight
+                Remedy:>
+                Use seeds treated with fungicides, avoid planting in cold wet weather and include cotton residue to encourage decomposition which helps reduce the number of Escochita blight in the field.
+                </h2>
+
+            <h2 class="text-center mt-4 mb-4" style="font-size: 1.75rem;">आजाराचे नाव Ascochyta Blight 
+                उपाय :>
+                बुरशीनाशकांवर उपचारित बियाणे वापरा, थंड ओल्या हवामानात लागवड करणे टाळा आणि विघटन होण्यास प्रोत्साहित करण्यासाठी कापसाचे अवशेष समाविष्ट करा जे एस्कोच्यटा ब्लाइटच्या संख्या  शेतात कमी होणायास मदत करते.
+                
+                </h2>
+
+            <h2 class="text-center mt-4 mb-4" style="font-size: 1.75rem;">बीमारी का नाम है Ascochyta Blight
+                उपाय:>
+                फफूंदनाशकों से उपचारित बीजों का उपयोग करें, ठंडे गीले मौसम में रोपण से बचें और अपघटन को प्रोत्साहित करने के लिए कपास के अवशेषों को शामिल करें जो क्षेत्र में एस्कोचिता ब्लाइट की संख्या को कम करने में मदद करता है।
+                    </h2>
+            
+            <h2 class="text-center mt-4 mb-4" style="font-size: 1.75rem;">રોગનું નામ એસ્કોચેટા બ્લાઇટ છે
+                ઉપાય:>
+                ફૂગનાશક દવાઓ સાથેના બીજનો ઉપયોગ કરો, ઠંડા ભીના હવામાનમાં વાવેતર ટાળો અને વિઘટનને પ્રોત્સાહન આપવા કપાસના અવશેષો શામેલ કરો જે ક્ષેત્રમાં એસ્કોચિતા અસ્પષ્ટતાની સંખ્યા ઘટાડવામાં મદદ કરે છે.
+            </h2>
+
+            <h2 class="text-center mt-4 mb-4" style="font-size: 1.75rem;">நோயின் பெயர் அஸ்கொச்சிட்டா ப்ளைட்
+                பரிகாரம்:>
+                பூஞ்சைக் கொல்லிகளுடன் சிகிச்சையளிக்கப்பட்ட விதைகளைப் பயன்படுத்துங்கள், குளிர்ந்த ஈரமான காலநிலையில் நடவு செய்வதைத் தவிர்க்கவும், சிதைவை ஊக்குவிக்க பருத்தி எச்சங்களை உள்ளடக்குங்கள், இது வயலில் எஸ்கோகிட்டா ப்ளைட்டின் எண்ணிக்கையை குறைக்க உதவுகிறது.
+            </h2>
+
+            <h2 class="text-center mt-4 mb-4" style="font-size: 1.75rem;">ರೋಗದ ಹೆಸರು ಅಸ್ಕೋಚೈಟಾ ಬ್ಲೈಟ್
+                ಪರಿಹಾರ:>
+                ಶಿಲೀಂಧ್ರನಾಶಕಗಳೊಂದಿಗೆ ಸಂಸ್ಕರಿಸಿದ ಬೀಜಗಳನ್ನು ಬಳಸಿ, ತಂಪಾದ ಆರ್ದ್ರ ವಾತಾವರಣದಲ್ಲಿ ನೆಡುವುದನ್ನು ತಪ್ಪಿಸಿ ಮತ್ತು ಕೊಳೆಯುವಿಕೆಯನ್ನು ಉತ್ತೇಜಿಸಲು ಹತ್ತಿ ಅವಶೇಷಗಳನ್ನು ಸೇರಿಸಿ ಇದು ಕ್ಷೇತ್ರದಲ್ಲಿ ಎಸ್ಕೊಕಿತಾ ರೋಗದ ಸಂಖ್ಯೆಯನ್ನು ಕಡಿಮೆ ಮಾಡಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ.
+            </h2>
+
+            
+        
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section style="margin-bottom: 50px;">
+
+        <div class="container gallery-h1">
+
+            
+            <h1 class="text-center mt-4 mb-4">साथ ही नीचे दिखाये कीटनाशकों कां प्रयोग कर सकते है।</h1>
+
+            
+
+
+            <hr class="mt-2 mb-5">
+
+            <div class="row text-center text-lg-left">
+
+                <div class="col-lg-4 col-md-4 col-6 col-12">
+                    <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="/static/css/images/pesticide1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-6 col-12">
+                    <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="/static/css/images/pesticide2.png" alt="">
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-6 col-12">
+                    <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="/static/css/images/pesticide3.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-6 col-12">
+                    <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="/static/css/images/pesticide4.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-6 col-12">
+                    <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="/static/css/images/pesticide5.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-6 col-12">
+                    <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="/static/css/images/pesticide6.jpg" alt="">
+                    </a>
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section>
+        <div class="container Content-h5">
+
+            
+                
+            <h5 style="font-size: 1rem;" class="text-center my-3 contents">
+                Made with<p><span style="font-size:300%;color:red;">&hearts;</span></p> OMKAR GURAV </h5>
+            
+            <h5 style="font-size: 1rem;" class="text-center my-3 contents">
+                akashgurav551@gmail.com </h5>
+       
+        
+            
+        
+        
+            </div>
+    </section>
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
