@@ -23,7 +23,7 @@ def model_predict(image_path,model):
     image = np.expand_dims(image,axis=0)
     
     result = np.argmax(model.predict(image))
-    prediction = classes[result]
+    
     
     
     if result == 1:
